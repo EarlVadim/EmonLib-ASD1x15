@@ -1,0 +1,28 @@
+{
+  "name": "EmonLib-ADS1x15",
+  "keywords": "electricity, energy, monitoring",
+  "description": "Energy Monitoring Library",
+  "version": "1.0.0",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/EarlVadim/EmonLib-ASD1x15.git"
+  },
+  "frameworks": "arduino",
+  "platforms": ["atmelavr", "atmelmegaavr", "atmelsam", "espressif8266", "espressif32"],
+  "authors" :
+  [
+     {
+       "name":"Chayan Mistry",
+       "email":"chayanforyou@yahoo.com"
+     },
+     {
+       "name":"Trystan Lea",
+       "email":""
+     },
+	 {
+       "name":"Vadzim Nikalayeu",
+       "email":"earl.vadim@gmail.com"
+     }
+  ]
+}
