@@ -8,6 +8,8 @@
 
 ## Arduino Energy Monitoring Library for ADS1x15 module - Compatible with ESP8266 NodeMCU
 
+Modified EmonLib library for Arduino IDE. Allows flexible configuration of the energy monitor via ADS1x15 in conjunction with the Adafruit_ADS1X15 library.
+
 ![](https://github.com/EarlVadim/EmonLib-ASD1x15/blob/main/schematic.png)
 
 Designed for use with emonTx: http://openenergymonitor.org/emon/Modules
