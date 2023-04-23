@@ -311,6 +311,11 @@ double EnergyMonitor::calcVrms(unsigned int pinV, unsigned int crossings, unsign
 
   double V_RATIO = VCAL *((SupplyVoltage/1000.0) / (ADC_COUNTS));
   Vrms = V_RATIO * sqrt(sumV / numberOfSamples);
+	
+  //Reset accumulators
+  sumV = 0;
+  sumI = 0;
+  sumP = 0;	
   
   return Vrms;
 
