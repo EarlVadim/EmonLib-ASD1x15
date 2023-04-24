@@ -65,7 +65,7 @@ void EnergyMonitor::calcVI(unsigned int pinI, unsigned int pinV, unsigned int cr
   //  startV = analogRead(inPinV); 
   
     switch (pinV) {
-       case '0'...'3':
+       case 0 ... 3:
          startV = ads.readADC_SingleEnded(pinV);  	//using the voltage waveform   readADC_SingleEnded
          break;
        case 10:
@@ -99,7 +99,7 @@ void EnergyMonitor::calcVI(unsigned int pinI, unsigned int pinV, unsigned int cr
   //  sampleI = analogRead(inPinI);                 //Read in raw current signal
   
     switch (pinI) {
-       case '0'...'3':
+       case 0 ... 3:
          sampleI = ads.readADC_SingleEnded(pinI);  	//using the voltage waveform   readADC_SingleEnded
          break;
        case 10:
@@ -112,7 +112,7 @@ void EnergyMonitor::calcVI(unsigned int pinI, unsigned int pinV, unsigned int cr
          sampleI = ads.readADC_SingleEnded(0);
     } 
 	switch (pinV) {
-       case '0'...'3':
+       case 0 ... 3:
          sampleV = ads.readADC_SingleEnded(pinI);  	//using the voltage waveform   readADC_SingleEnded
          break;
        case 10:
@@ -220,7 +220,7 @@ double EnergyMonitor::calcVrms(unsigned int pinV, unsigned int crossings, unsign
   //  startV = analogRead(inPinV); 
   
     switch (pinV) {
-       case '0'...'3':
+       case 0 ... 3:
          startV = ads.readADC_SingleEnded(pinV);  	//using the voltage waveform   readADC_SingleEnded
          break;
        case 10:
@@ -254,7 +254,7 @@ double EnergyMonitor::calcVrms(unsigned int pinV, unsigned int crossings, unsign
   //  sampleI = analogRead(inPinI);                 //Read in raw current signal  
    
 	switch (pinV) {
-       case '0'...'3':
+       case 0 ... 3:
          sampleV = ads.readADC_SingleEnded(pinV);  	//using the voltage waveform   readADC_SingleEnded
          break;
        case 10:
@@ -332,7 +332,7 @@ double EnergyMonitor::calcIrms(unsigned int pinI, unsigned int Number_of_Samples
   {
 	
     switch (pinI) {
-       case '0'...'3':
+       case 0 ... 3:
          sampleI = ads.readADC_SingleEnded(pinI);  	//using the voltage waveform   readADC_SingleEnded
          break;
        case 10:
